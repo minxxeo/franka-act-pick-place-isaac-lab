@@ -137,9 +137,6 @@ The policy receives RGB observations from three camera viewpoints:
   <img src="docs/images/camera_views.png" width="100%">
 </p>
 
-<p align="center">
-  <b>Top camera (left) · Gripper camera (center) · Side camera (right)</b>
-</p>
 
 All three cameras are declared in `pick_place_cube_ik_rel_visuomotor_env_cfg.py`. Example:
 
