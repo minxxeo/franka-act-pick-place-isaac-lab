@@ -127,17 +127,19 @@ pose_range = {
 
 | Observation | Resolution | Purpose |
 |---|---:|---|
+| `top_cam` | 84 × 84 RGB | Cubes and workspace geometry |
 | `gripper_cam` | 84 × 84 RGB | Grasp and release close-up |
 | `side_cam` | 84 × 84 RGB | Grasp and placement height |
-| `top_cam` | 84 × 84 RGB | Cubes and workspace geometry |
 
-![Side camera preview](docs/images/side_cam.png)
+The policy receives RGB observations from three camera viewpoints:
 
-*Side camera (`side_cam`)*
+<p align="center">
+  <img src="docs/images/camera_views.png" width="100%">
+</p>
 
-![Top and gripper camera previews](docs/images/camera_views.png)
-
-*Top camera (`top_cam`, left) and gripper camera (`gripper_cam`, right)*
+<p align="center">
+  <b>Top camera (left) · Gripper camera (center) · Side camera (right)</b>
+</p>
 
 All three cameras are declared in `pick_place_cube_ik_rel_visuomotor_env_cfg.py`. Example:
 
